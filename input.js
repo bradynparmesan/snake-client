@@ -28,6 +28,12 @@ const handleUserInput = (key) => { //listener for user input to execute game act
   if (key === '\0064') { // Right - 'd' key equivalent
     connection.write("Move: right");
   }
+  if (key === '\007A') { // Message - 'z' key equivalent
+    connection.write("Say: I'm a ssssnake");
+  }
+  if (key === '\0078') { // Message - 'x' key equivalent
+    connection.write("Say: FEED ME!");
+  }
 }
 
 exports.module = setupInput;
